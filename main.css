@@ -1,0 +1,137 @@
+*{
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:var(--body-color);
+    height: 40vw;
+    display: flex;
+    justify-content: center;
+}
+:root{
+    --body-color: rgb(232, 225, 255);
+    --first-main-color: rgb(22, 13, 40);
+    --main-color:rgba(0, 0, 0, 0.447);
+    --second-main-color:rgba(0, 0, 0, 0.447);
+    --box-color: rgb(84, 84, 167);
+    --text-color:white;
+    --backC-color:rgb(40, 18, 83);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    height: 30rem;
+    background-color: var(--first-main-color);
+    color: var(--text-color);
+    border-radius: 84% 36% 56% 59% / 38% 62% 63% 37%;
+    box-shadow: 0 0 25px var( --box-color);
+    flex-direction: column;
+    width: 30rem;
+    position: relative;
+    top: 10%;
+    margin: 4rem 0 0;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+}
+.output-box{
+    display: flex;
+    flex-direction: row;
+}
+h1{
+    font-weight: 900;
+}
+label{
+    font-size: 110%;
+    font-weight: 600;
+}
+input{
+padding:0.3rem;
+border-radius: 25px;
+border: none;
+}
+button{
+    border-radius: 25px;
+    padding: 0.3rem;
+    border: none;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    color: var(--text-color);
+    background-color:var(--backC-color);
+    transition: all 0.3s ease-in-out;
+}
+button:hover{
+    box-shadow: 0 0 25px var(--box-color);
+}
+.Buttons{
+    display: flex;
+    flex-direction: row;
+    gap:25px;
+}
+@media (min-width:900px) and (max-width:1023px){
+    .container{
+        width: 37rem !important;
+        height: 37rem !important;
+        margin: 0;
+    }
+    h1{
+        font-size: 220% !important;
+    } 
+    input{
+        padding:0.8rem !important;
+        }
+        label{
+            font-size: 150% !important;
+        }
+        button{
+            width: 110px !important;
+            height: 50px !important;
+            font-size: 120% !important;
+        }
+}
+
+@media(max-width:464px){
+    .container{
+        width: 23rem !important;
+        height: 23rem !important;
+        margin: 7rem 0;
+    }
+    h1{
+        font-size: 130% !important;
+    } 
+}
+@media(max-width:370px){
+    .container{
+        width: 18rem !important;
+        height: 18rem !important;
+        margin: 8rem 0;
+        gap:30px;
+    }
+    h1{
+        font-size: 130% !important;
+    } 
+    label{
+        font-size: 80%;
+    }
+    input{
+        padding:0.2rem !important;
+        }
+        button{
+            width: 100px !important;
+            height: 35px !important;
+            font-size: 70% !important;
+        }
+
+}
+
+
