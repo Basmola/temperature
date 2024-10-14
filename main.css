@@ -6,9 +6,10 @@
 }
 body{
     background-color:var(--body-color);
-    height: 40vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 :root{
     --body-color: rgb(232, 225, 255);
@@ -31,9 +32,6 @@ body{
     box-shadow: 0 0 25px var( --box-color);
     flex-direction: column;
     width: 30rem;
-    position: relative;
-    top: 10%;
-    margin: 4rem 0 0;
 }
 form{
     display: flex;
