@@ -8,9 +8,13 @@ button1.onclick = () =>{
         output.innerHTML = "Enter a valid temperature";
     }
     else{
-        let outputValue=inputValue * ( 9 / 5 ) +32;
-        output.innerHTML=`The Tempreture in Fahrenheit:${outputValue} °F`;
-    }
+        let outputValue=inputValue * ( 9 / 5 ) +32 ;
+        if(Number.isInteger(outputValue)){
+        output.innerHTML=`The Tempreture in Fahrenheit:${outputValue} °F`;}
+        else{
+            outputValue=(inputValue * ( 9 / 5 ) +32 ).toFixed(3);
+            output.innerHTML=`The Tempreture in Fahrenheit:${outputValue} °F`;}}
+        
     };
 button2.onclick = () =>{
 output.innerHTML="";
